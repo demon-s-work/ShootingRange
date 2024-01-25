@@ -14,7 +14,9 @@ namespace ShootingRange
 
 		public void Draw(Graphics g)
 		{
+			g.RotateTransform(45);
 			g.DrawImage(Sprite, Position);
+			g.RotateTransform(0);
 		}
 	}
 }
