@@ -1,10 +1,11 @@
 ﻿using System.Drawing;
 
-namespace ShootingRange
+namespace ShootingRange.Game
 {
 	public interface IEntity
 	{
-		void Update(float mils, float delta);
+		void Initialize();
+		void Update(float deltaMills);
 		void Draw(Graphics g);
 	}
 }
