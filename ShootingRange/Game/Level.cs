@@ -16,6 +16,10 @@ namespace ShootingRange.Game
 				DirectionAngle = 45,
 				Speed = 10
 			});
+			_entities.Add(new CannonEntity
+			{
+				Position = new Vector2F(100f,100f)
+			});
 			_entities.ForEach(e => e.Initialize());
 		}
 

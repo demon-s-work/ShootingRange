@@ -52,7 +52,17 @@ namespace ShootingRange.Engine
 			_window.Closing += WindowOnClosing;
 			_window.Shown += WindowOnShown;
 			
+			_window.MouseMove += WindowOnMouseMove;
+			_window.MouseClick += WindowOnMouseClick;
 			Application.Run(_window);
+		}
+
+		private void WindowOnMouseClick(object sender, MouseEventArgs e)
+		{
+		}
+
+		private void WindowOnMouseMove(object sender, MouseEventArgs e)
+		{
 		}
 
 		private void WindowOnShown(object sender, EventArgs e)

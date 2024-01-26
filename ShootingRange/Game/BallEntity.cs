@@ -3,7 +3,7 @@ using ShootingRange.Extensions;
 
 namespace ShootingRange.Game
 {
-	public class BallEntity : DrawableEntity
+	public class BallEntity : SpriteEntity
 	{
 		public float DirectionAngle { get; set; }
 		public float Speed { get; set; }
